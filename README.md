@@ -51,3 +51,7 @@ The ADV7513 HDMI transmitter requires configuration over I²C before HDMI video 
 ## License
 
 This project is intended for educational use. You are free to modify and reuse the code.
+
+
+![IMG_0862](https://github.com/user-attachments/assets/19f29b24-2537-4989-9a11-6b53c6eb0d92)
+
