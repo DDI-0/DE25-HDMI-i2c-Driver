@@ -7,7 +7,7 @@ use work.vga_controller.all;
 entity vga_delay is
     generic (
         NUM_PIPES  : natural     := 2;  -- pipe depth for delay
-        COORD_BITS : natural    := 12; -- Sufficient for 4096 pixels
+        COORD_BITS : natural    := 12; --  for 4096 pixels
         vga_res    : vga_timing := vga_res_1920x1080
     );
     port (
@@ -107,5 +107,6 @@ begin
 
     pixel_coord_d.x <= to_integer(unsigned(pipe_out(2*COORD_BITS-1 downto COORD_BITS)));
     pixel_coord_d.y <= to_integer(unsigned(pipe_out(COORD_BITS-1 downto 0)));
+
 
 end architecture rtl;
